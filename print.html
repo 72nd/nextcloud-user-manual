@@ -261,14 +261,163 @@
 <p><img src="clients/android/fdroid/./assets/fdroid-07.png" alt="Installation abgeschlossen" /></p>
 <p>Du kannst nun Applikationen aus dem unabhängigen F-Droid Store herunterladen.</p>
 <p><img src="clients/android/fdroid/./assets/fdroid-08.png" alt="Der F-Droid Store" /></p>
-<h1><a class="header" href="#mac" id="mac">Mac</a></h1>
-<h1><a class="header" href="#dateien-synchronisieren" id="dateien-synchronisieren">Dateien synchronisieren</a></h1>
-<h1><a class="header" href="#kalender-synchronisieren" id="kalender-synchronisieren">Kalender synchronisieren</a></h1>
-<h1><a class="header" href="#kontakte-synchronisieren" id="kontakte-synchronisieren">Kontakte synchronisieren</a></h1>
-<h1><a class="header" href="#windows" id="windows">Windows</a></h1>
-<h1><a class="header" href="#dateien-synchronisieren-1" id="dateien-synchronisieren-1">Dateien synchronisieren</a></h1>
-<h1><a class="header" href="#windows-10-kalender-synchronisieren" id="windows-10-kalender-synchronisieren">Windows 10 Kalender synchronisieren</a></h1>
-<h1><a class="header" href="#outlook-einrichten" id="outlook-einrichten">Outlook einrichten</a></h1>
+<h1><a class="header" href="#nextcloud-mit-mac-verbinden" id="nextcloud-mit-mac-verbinden">Nextcloud mit Mac verbinden</a></h1>
+<p>Dieses Kapitel befasst sich mit der Integration von macOS. Es werden folgende Themen abgedeckt (mehr kommen, sobald ich wieder Zugang zu einem Mac habe):</p>
+<ul>
+<li><a href="clients/mac/./files/index.html">Dateien</a></li>
+<li><a href="clients/mac/./cal/index.html">Kalender</a></li>
+<li><a href="clients/mac/./card/index.html">Kontakte</a></li>
+</ul>
+<h1><a class="header" href="#dateien-1" id="dateien-1">Dateien</a></h1>
+<p>Das Vorgehen bei der Konfiguration des Dateinsynchronsiation ist mit dem von Windows vergleichbar. Bis dieser Teil der Dokumentation fertiggestellt ist, verwende einfach die <a href="clients/mac/files//clients/windows/files/index.html">Anleitung für Windows</a>. Vergiss einfach nicht, die Mac und nicht die Windows Variante zu downloaden.</p>
+<h1><a class="header" href="#mac-kalender-einrichten" id="mac-kalender-einrichten">Mac Kalender einrichten</a></h1>
+<p>Die Kalender Applikation von macOS kann mit Nextcloud verbunden werden.</p>
+<p>Öffne hierzu zunächst die Kalenderapp auf deinem Mac. Danach klicke in der Menüleiste auf »Kalender« (1) und danach auf »Accounts...« (2).</p>
+<p><img src="clients/mac/cal/./assets/cal-01.png" alt="Accounteinstellungen öffnen" /></p>
+<p>Dies öffnet die Accounteinstellungen des Kalenders. Wenn du bereits über Accounts verfügst (der Dialog also nicht so wie unten aussieht) klicke zunächst auf das Plus links unten (1). Danach klicke auf »Anderen Account hinzufügen« (2). Wenn du noch über keinen Account verfügst, kannst du den ersten Schritt überspringen und gleich auf »Anderen Account hinzufügen« klicken.</p>
+<p><img src="clients/mac/cal/./assets/cal-02.png" alt="Neuen Account hinzufügen" /></p>
+<p>Wähle als Typ »CalDAV-Account« aus.</p>
+<p><img src="clients/mac/cal/./assets/cal-03.png" alt="CalDAV Typ auswählen" /></p>
+<p>Im nächsten Dialog müssen die korrekten Einstellungen gesetzt werden. Wähle zunächst (1) als Accounttyp <code>Erweitert</code> aus. Danach kannst du die Einstellungen (2) wie folgt setzten:</p>
+<table><thead><tr><th>Einstellung</th><th>Was</th><th>Beispiel</th></tr></thead><tbody>
+<tr><td>Benutzername</td><td>Dein Loginname für Nextcloud.</td><td><code>max</code></td></tr>
+<tr><td>Passwort</td><td>Das Passwort, welches du für Nextcloud verwendest.</td><td></td></tr>
+<tr><td>Serveradresse</td><td>Die URL der Nextcloud ohne den <code>https://</code> Teil.</td><td><code>nx15150.your-storageshare.de</code></td></tr>
+<tr><td>Serverpfad</td><td><code>remote.php/dav/principals/users/BENUTZER/</code> wobei <code>BENUTZER</code> durch dein Loginname ersetzt werden muss.</td><td><code>remote.php/dav/principals/users/max/</code></td></tr>
+<tr><td>Port</td><td><code>433</code></td><td><code>433</code></td></tr>
+<tr><td>SSL Verwenden</td><td>Aktivieren (Hacken muss gesetzt sein).</td><td></td></tr>
+<tr><td>Kerbos v5 zur...</td><td>Deaktiviert (Hacken nicht gesetzt)</td><td></td></tr>
+</tbody></table>
+<p>Die Beispielswerte gelten für den User mit dem Namen <code>max</code> auf der Nextcloud mit der URL <code>https://nx15150.your-storageshare.de</code>.</p>
+<p>Die Eingabe mit einem Klick auf »Anmelden« abschließen.</p>
+<p><img src="clients/mac/cal/./assets/cal-04.png" alt="Servereinstellungen" /></p>
+<p>Erlaube den Zugriff mit einem Klick auf »Immer erlauben«.</p>
+<p><img src="clients/mac/cal/./assets/cal-05.png" alt="Zugriff immer erlauben" /></p>
+<p>Die neue Kalenderverbindung befindet sich nun bei deinen Kalenderaccounts. Wenn du die Aufgabenlisten (ToDo's) in die Erinnerungen App integrieren möchtest, aktiviere das entsprechend.</p>
+<p><img src="clients/mac/cal/./assets/cal-06.png" alt="Neuer Account" /></p>
+<p>Du kannst nun auf alle Kalender von der Nextcloud zugreifen. Es kann sein, dass du diese zunächst nicht siehst. Um dies zu ändern, Klicke in der Hauptansicht von Kalender auf »Kalender« und aktiviere die gewünschten Kalender.</p>
+<p><img src="clients/mac/cal/./assets/cal-07.png" alt="Kalender anzeigen" /></p>
+<h1><a class="header" href="#mac-kontakte-einrichten" id="mac-kontakte-einrichten">Mac Kontakte einrichten</a></h1>
+<p>Auch die Kontaktbücher von Nextcloud können mit der entsprechenden Mac Applikation synchronisiert werden. Ich liefere die Anleitung nach, sobald ich wieder über einen Mac verfüge. Das Vorgehen entspricht aber weitestgehend dem des Kalenders.</p>
+<h1><a class="header" href="#nextcloud-mit-windows-verbinden" id="nextcloud-mit-windows-verbinden">Nextcloud mit Windows verbinden</a></h1>
+<p>Dieses Kapitel befasst sich mit der Integration von Windows. Folgende Themen werden abgedeckt:</p>
+<ul>
+<li><a href="clients/windows/./files/index.html">Dateien</a> </li>
+<li><a href="clients/windows/./cal/index.html">Windows 10 Kalender</a></li>
+<li><a href="clients/windows/./outlook/index.html">Outlook Kontakte, Termine und Aufgaben</a></li>
+</ul>
+<h1><a class="header" href="#dateien-2" id="dateien-2">Dateien</a></h1>
+<p>Diese Anleitung hilft dir, die Daten von Nextcloud mit deinem Windowssystem zu synchronisieren.</p>
+<h2><a class="header" href="#installation-client" id="installation-client">Installation Client</a></h2>
+<p>Zunächst muss der Client heruntergeladen werden. Gehe hierfür auf <a href="https://nextcloud.com/install/#install-clients">https://nextcloud.com/install/#install-clients</a> und klicke auf »Windows« um den Installer herunterzuladen.</p>
+<p><img src="clients/windows/files/./assets/files-01.png" alt="Download starten" /></p>
+<p>Wenn der Download abgeschlossen ist, öffne die heruntergeladene Datei mit einem Klick auf die Datei.</p>
+<p><img src="clients/windows/files/./assets/files-02.png" alt="Installer öffnen" /></p>
+<p>Der Installer öffnet sich. Klicke auf »Next« um die Installation zu starten.</p>
+<p><img src="clients/windows/files/./assets/files-03.png" alt="Installer" /></p>
+<p>Klicke auf »Next«.</p>
+<p><img src="clients/windows/files/./assets/files-04.png" alt="Weiter" /></p>
+<p>Starte die Installation mit einem Klick auf »Install«.</p>
+<p><img src="clients/windows/files/./assets/files-05.png" alt="Installation starten" /></p>
+<p>Erlaube das Durchführen der Installation mit einem Klick auf »Ja«.</p>
+<p><img src="clients/windows/files/./assets/files-06.png" alt="Installation zulassen" /></p>
+<p>Warte bis die Installation abgeschlossen ist und schliesse den Installer mit einem Klick »Finish«.</p>
+<p><img src="clients/windows/files/./assets/files-07.png" alt="Installtion abschliessen" /></p>
+<h2><a class="header" href="#account-hinzufügen" id="account-hinzufügen">Account hinzufügen</a></h2>
+<p>Starte das Nextcloud Programm auf deinem Computer. Der unten dargestellte Dialog wird sich öffnen. Klicke auf den oberen linken Bereich der Titelleiste (innerhalb des rot markierten Bereichs).</p>
+<p><img src="clients/windows/files/./assets/files-08.png" alt="Dropdown Menü öffnen" /></p>
+<p>Klicke auf »Konto hinzufügen«.</p>
+<p><img src="clients/windows/files/./assets/files-09.png" alt="Konto hinzufügen" /></p>
+<p>Ein Assistent öffnet sich. Klicke auf »Bei Nextcloud anmelden«. (Hinweis: Sollte sich nicht der nächste Dialog öffnen, sondern eine Website, gehe zurück und betätige den »Bei Nextcloud anmelden« erneut.)</p>
+<p><img src="clients/windows/files/./assets/files-10.png" alt="Bei Nextcloud anmelden" /></p>
+<p>Nun muss die URL der Cloud (in unserem Falle <code>https://nx15150.your-storageshare.de</code>) eingegeben und die Eingabe mit einem Klick auf »Weiter« (2) bestätigt werden.</p>
+<p><img src="clients/windows/files/./assets/files-11.png" alt="URL der Nextcloud angeben" /></p>
+<p>Es wird sich nun ein Browserfenster öffnen. Wenn das der Fall ist, klicke auf »Anmelden«.</p>
+<p><img src="clients/windows/files/./assets/files-12.png" alt="Anmelden" /></p>
+<p>Gib dein Benutzername (1) und Passwort (2) ein und fahre mit einem Klick auf »Anmelden« (3) fort.</p>
+<p><img src="clients/windows/files/./assets/files-13.png" alt="Anmeldedaten" /></p>
+<p>Erlaube dem Desktopprogramm den Zugriff mit einem Klick auf »Grant access«/»Zugriff erlauben«.</p>
+<p><img src="clients/windows/files/./assets/files-14.png" alt="Zugriff erlauben" /></p>
+<p>Das Browserfenster kann nun geschlossen werden.</p>
+<p><img src="clients/windows/files/./assets/files-15.png" alt="Authentifizierung erfolgreich abgeschossen" /></p>
+<p>Kehre nun zum Assistenten zurück und warte, bis du die unten abgebildete Ansicht sehen kannst. Deaktiviere die Option »Bestätigung erfragen, bevor externe Speicher synchronisiert werden«.</p>
+<p><img src="clients/windows/files/./assets/files-16.png" alt="Bestätigung deaktivieren" /></p>
+<p>Klicke nun auf »Verbinden«.</p>
+<p><img src="clients/windows/files/./assets/files-17.png" alt="Verbinden" /></p>
+<p>Das Einrichten ist nun abgeschlossen. Auf die Daten kann nun im Explorer zugegriffen werden. Nutze einfach das neue Bookmark »Nextcloud«.</p>
+<p><img src="clients/windows/files/./assets/files-18.png" alt="Die Dateien sind verfügbar" /></p>
+<h1><a class="header" href="#windows-10-kalender-einrichten" id="windows-10-kalender-einrichten">Windows 10 Kalender einrichten</a></h1>
+<p>Die Kalenderapplikation von Windows 10 kann mit Nextcloud verbunden werden.</p>
+<p>Als erster Schritt öffne die Kalenderapplikation auf deinem System. Danach öffne die Einstellungen mit einem Klick auf das Zahnradsymbol links unten.</p>
+<p><img src="clients/windows/cal/./assets/cal-01.png" alt="Einstellungen öffnen" /></p>
+<p>In den Einstellungen »Manage Accounts«/»Konten verwalten« auswählen.</p>
+<p><img src="clients/windows/cal/./assets/cal-02.png" alt="Konten verwalten" /></p>
+<p>In der Kontenübersicht mit einem Klick auf »Add account«/»Konto hinzufügen« ein neues Konto anlegen.</p>
+<p><img src="clients/windows/cal/./assets/cal-03.png" alt="Konto hinzufügen" /></p>
+<p>Im Dialog die Option »iCloud« auswählen.</p>
+<p><img src="clients/windows/cal/./assets/cal-04.png" alt="iCloud Typ wählen" /></p>
+<p>Im nächsten Dialog müssen die drei Textfelder ausgefüllt werden (1 bis 3). <em>Die hierbei eingegebenen Daten müssen nicht korrekt sein.</em>  Es reicht also, irgendwelche Werte zu verwenden.</p>
+<p><img src="clients/windows/cal/./assets/cal-05.png" alt="Konto anlegen" /></p>
+<p>Nach einer kurzen Wartezeit ist das Konto angelegt und der Dialog kann geschlossen werden.</p>
+<p><img src="clients/windows/cal/./assets/cal-06.png" alt="Konto ist angelegt" /></p>
+<p>In der »Konten verwalten« Übersicht klicke auf das soeben angelegte Konto.</p>
+<p><img src="clients/windows/cal/./assets/cal-07.png" alt="Konto bearbeiten" /></p>
+<p>Im neu geöffneten Dialog auf »Synchronisationseinstellungen für Postfach ändern« klicken.</p>
+<p><img src="clients/windows/cal/./assets/cal-08.png" alt="Optionen öffnen" /></p>
+<p>In dieser Ansicht nach unten scrollen und auf »Erweiterte Postfacheinstellungen« klicken.</p>
+<p><img src="clients/windows/cal/./assets/cal-09.png" alt="Konteneinstellungen" /></p>
+<p>Ein weiterer Dialog wird geöffnet. Scrolle runter, bis du die Textfelder »Kontaktserver (CardDAV)« und »Kalenderserver (CalDAV)« sehen kannst. In diese beide Felder muss die Kalendersync URL eingegeben werden. Wie diese gefunden werden kann, erklärt <a href="clients/windows/cal//clients/general/cal-url/index.html">dieser Artikel</a>. Danach die Eingabe mit einem Klick auf »Fertig« beenden.</p>
+<p><img src="clients/windows/cal/./assets/cal-10.png" alt="Erweiterte Konteneinstellungen" /></p>
+<p>Schliesse danach auch den Synchronisationseinstellung Dialog und gib nun deinen korrekten Benutzername (1), Kennwort (2) und Mailadresse (3, die Adresse, welche sich in deinem Nextcloud-Account findet). Schliesse deine Eingaben mit einem Klick auf »Speichern« ab.</p>
+<p><img src="clients/windows/cal/./assets/cal-11.png" alt="Korrekte Nutzerdaten" /></p>
+<p>Du kannst nun den Kalender von Nextcloud auf Windows 10 nutzen.</p>
+<p><img src="clients/windows/cal/./assets/cal-12.png" alt="Der Kalender" /></p>
+<h1><a class="header" href="#outlook-kontakte-termine-und-aufgaben-synchronisieren" id="outlook-kontakte-termine-und-aufgaben-synchronisieren">Outlook (Kontakte, Termine und Aufgaben) synchronisieren</a></h1>
+<p>Dieser Abschnitt beschäftigt sich mit dem Einrichten von Nextcloud mit Outlook. Hierfür ist ein Plugin erforderlich, dessen Installation und Konfiguration nun erklärt wird.</p>
+<h2><a class="header" href="#plugin-installieren" id="plugin-installieren">Plugin installieren</a></h2>
+<p>Für die Integration wird das Plugin <a href="https://caldavsynchronizer.org/">Outlook CalDav Synchronizer</a> benötigt. Gehe zunächst auf <a href="https://caldavsynchronizer.org/download-2/">diese Seite</a> und klicke auf »Download« um das Herunterladen zu starten.</p>
+<p><img src="clients/windows/outlook/./assets/outlook-01.png" alt="Installationsdatei herunterladen" /></p>
+<p>Wenn der Download abgeschlossen ist, klicke auf die heruntergeladene Datei um sie zu öffnen.</p>
+<p><img src="clients/windows/outlook/./assets/outlook-02.png" alt="ZIP Datei öffnen" /></p>
+<p>Ein Dateifenster öffne sich. Starte die Installation mit einem Doppelklick auf die Datei »CalDavSynchronizer Setup«.</p>
+<p><img src="clients/windows/outlook/./assets/outlook-03.png" alt="Installer öffnen" /></p>
+<p>Klicke auf »Next«.</p>
+<p><img src="clients/windows/outlook/./assets/outlook-04.png" alt="Weiter" /></p>
+<p>Klicke auf »Next«.</p>
+<p><img src="clients/windows/outlook/./assets/outlook-05.png" alt="Weiter" /></p>
+<p>Erlaube das Durchführen der Installation mit einem Klick auf »Ja«.</p>
+<p><img src="clients/windows/outlook/./assets/outlook-06.png" alt="Installtion zulassen" /></p>
+<p>Warte, bis die Installation abgeschlossen ist und beende sie mit einem Klick auf »Close«.</p>
+<p><img src="clients/windows/outlook/./assets/outlook-07.png" alt="Installationsassistent schliessen" /></p>
+<h2><a class="header" href="#konfiguration" id="konfiguration">Konfiguration</a></h2>
+<p>Öffne nun Outlook. <em>Achtung:</em> Wenn Outlook während der Installation des CalDavSynchronizer offen war, musst du Outlook schliessen und nochmals öffnen.</p>
+<p>Outlook verfügt nun über eine neue Registerkarte (»CalDav Synchronizer«). Öffne diese, indem du auf diese  klickst.</p>
+<p><img src="clients/windows/outlook/./assets/outlook-08.png" alt="Plugin Registerkarte öffnen" /></p>
+<p>Klicke nun auf »Synchronization Profiles«.</p>
+<p><img src="clients/windows/outlook/./assets/outlook-09.png" alt="Profile öffnen" /></p>
+<p>Lege ein neues Profil mit einem Klick auf das grüne Plus an.</p>
+<p><img src="clients/windows/outlook/./assets/outlook-10.png" alt="Neues Profil anlegen" /></p>
+<p>Wähle die »Generic CalDAV/CardDAV« Option aus (1) und bestätige diese Wahl mit einem Klick auf »Ok«.</p>
+<p><img src="clients/windows/outlook/./assets/outlook-11.png" alt="Typ auswählen" /></p>
+<p>Das Profil kann nun weiter editiert werden. Gibt zunächst (1) dem Profil einen Namen. Dieser hat keine weitere Funktion, hilft aber bei der Unterscheidung mehrerer Profile. Es empfiehlt sich einfach den Namen des Kontaktbuches oder Kalenders zu verwenden, welcher synchronisiert werden soll.</p>
+<p>Aufgrund des Aufbaus von Outlook, muss jedes Kontaktbuch/Kalender/Aufgabenliste <em>separat</em> in einem eigenen Profil angelegt werden. Der Abschnitt »Konfiguration« muss also für alle Kontaktbücher/Kalender/Aufgabenlisten einzeln wiederholt werden. In Folge wird das Vorgehen anhand eines Kalenders gezeigt. Die Schritte für Kontaktbücher oder Aufgabenlisten sind aber die selben, auf Unterschiede wird hingewiesen werden.</p>
+<p>Klicke auf den »...« Button.</p>
+<p><img src="clients/windows/outlook/./assets/outlook-12.png" alt="Profilname und Ordner" /></p>
+<p>Klicke auf »Neu«.</p>
+<p><img src="clients/windows/outlook/./assets/outlook-13.png" alt="Ordnerübersicht" /></p>
+<p>Es muss nun ein neuer Ordner für den Kalender/Kontaktbuch/Aufgabenliste (ab jetzt »Ressource« genannt) angelegt werden. Vergebe hierzu zunächst (1) einen Namen. Dieser kann frei gewählt werden, am besten benennst du ihn so, wie die Ressource in der Nextcloud heisst. In einem zweiten Schritt (2) musst du den Elemententyp auswählen. Dieser entspricht der Ressource. In anderen Worten: Wenn du einen Kalender synchronisieren möchtest, brauchst du einen »Kalender« Typ etc.</p>
+<p>Abschliessend (3) musst du den Speicherort wählen. Aktiviere hierzu den passenden Ort. Wenn du eine Aufgabenliste synchronisieren möchtest wähle »Aufgaben« (A), für Kalender »Kalender« (B) und für Kontakte »Kontakte« (C). Schliesse deine Eingaben mit einem Klick auf »Ok« (4) ab.</p>
+<p><img src="clients/windows/outlook/./assets/outlook-14.png" alt="Neuer Ordner anlegen" /></p>
+<p>Wähle den soeben angelegten Kalender/Kontaktbuch/Aufgabenliste aus (1) und bestätige deine Wahl mit »Ok« (2).</p>
+<p><img src="clients/windows/outlook/./assets/outlook-15.png" alt="Neuer Ordner auswählen" /></p>
+<p>Aktiviere zunächst (1) die Option »Synchronize items immediately after change« und gib danach die Kalender-URL ein (2), wie du diese herausfindest erfährst du <a href="clients/windows/outlook//clients/general/cal-url/index.html">hier</a>. Weiter gibst du dein Benutzername (3) sowie Passwort (4) ein. Abschliessend gib deine Mailadresse, welche auch von deinem Nextcloud-Account verwendet wird ein (5).</p>
+<p>Klicke nun auf »Test or discover settings«.</p>
+<p><img src="clients/windows/outlook/./assets/outlook-16.png" alt="Daten eingeben" /></p>
+<p>Es öffnet sich nun ein weiterer Dialog, indem du aus den vorhandenen Kalender/Kontaktbücher/Aufgabenlisten auswählen kannst. Klicke auf die gewünschte Ressource (1) und bestätige die Auswahl mit »Ok« (2).</p>
+<p><img src="clients/windows/outlook/./assets/outlook-17.png" alt="Ressource auswählen" /></p>
+<p>Die Konfiguration ist nun abgeschlossen. Mit einem Klick auf »Ok« werden deine Einstellungen gespeichert und du kannst die neue Ressource nutzen.</p>
+<p><img src="clients/windows/outlook/./assets/outlook-18.png" alt="Konfiguration abschliessen" /></p>
+<p><em>Hinweis:</em> Vergiss nicht, für jeden weiteren Kalender/Kontaktbuch/Aufgabenliste ein neues Profil und einen neuen Ordner anzulegen.</p>
 <h1><a class="header" href="#allgemein" id="allgemein">Allgemein</a></h1>
 <p>Dieses Kapitel umfasst weitere Themen der Integration von Nextcloud.</p>
 <h1><a class="header" href="#url-für-kalender--und-kontaktsynchronisation" id="url-für-kalender--und-kontaktsynchronisation">URL für Kalender- und Kontaktsynchronisation</a></h1>

@@ -163,7 +163,33 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#kalender-synchronisieren" id="kalender-synchronisieren">Kalender synchronisieren</a></h1>
+                        <h1><a class="header" href="#mac-kalender-einrichten" id="mac-kalender-einrichten">Mac Kalender einrichten</a></h1>
+<p>Die Kalender Applikation von macOS kann mit Nextcloud verbunden werden.</p>
+<p>Öffne hierzu zunächst die Kalenderapp auf deinem Mac. Danach klicke in der Menüleiste auf »Kalender« (1) und danach auf »Accounts...« (2).</p>
+<p><img src="./assets/cal-01.png" alt="Accounteinstellungen öffnen" /></p>
+<p>Dies öffnet die Accounteinstellungen des Kalenders. Wenn du bereits über Accounts verfügst (der Dialog also nicht so wie unten aussieht) klicke zunächst auf das Plus links unten (1). Danach klicke auf »Anderen Account hinzufügen« (2). Wenn du noch über keinen Account verfügst, kannst du den ersten Schritt überspringen und gleich auf »Anderen Account hinzufügen« klicken.</p>
+<p><img src="./assets/cal-02.png" alt="Neuen Account hinzufügen" /></p>
+<p>Wähle als Typ »CalDAV-Account« aus.</p>
+<p><img src="./assets/cal-03.png" alt="CalDAV Typ auswählen" /></p>
+<p>Im nächsten Dialog müssen die korrekten Einstellungen gesetzt werden. Wähle zunächst (1) als Accounttyp <code>Erweitert</code> aus. Danach kannst du die Einstellungen (2) wie folgt setzten:</p>
+<table><thead><tr><th>Einstellung</th><th>Was</th><th>Beispiel</th></tr></thead><tbody>
+<tr><td>Benutzername</td><td>Dein Loginname für Nextcloud.</td><td><code>max</code></td></tr>
+<tr><td>Passwort</td><td>Das Passwort, welches du für Nextcloud verwendest.</td><td></td></tr>
+<tr><td>Serveradresse</td><td>Die URL der Nextcloud ohne den <code>https://</code> Teil.</td><td><code>nx15150.your-storageshare.de</code></td></tr>
+<tr><td>Serverpfad</td><td><code>remote.php/dav/principals/users/BENUTZER/</code> wobei <code>BENUTZER</code> durch dein Loginname ersetzt werden muss.</td><td><code>remote.php/dav/principals/users/max/</code></td></tr>
+<tr><td>Port</td><td><code>433</code></td><td><code>433</code></td></tr>
+<tr><td>SSL Verwenden</td><td>Aktivieren (Hacken muss gesetzt sein).</td><td></td></tr>
+<tr><td>Kerbos v5 zur...</td><td>Deaktiviert (Hacken nicht gesetzt)</td><td></td></tr>
+</tbody></table>
+<p>Die Beispielswerte gelten für den User mit dem Namen <code>max</code> auf der Nextcloud mit der URL <code>https://nx15150.your-storageshare.de</code>.</p>
+<p>Die Eingabe mit einem Klick auf »Anmelden« abschließen.</p>
+<p><img src="./assets/cal-04.png" alt="Servereinstellungen" /></p>
+<p>Erlaube den Zugriff mit einem Klick auf »Immer erlauben«.</p>
+<p><img src="./assets/cal-05.png" alt="Zugriff immer erlauben" /></p>
+<p>Die neue Kalenderverbindung befindet sich nun bei deinen Kalenderaccounts. Wenn du die Aufgabenlisten (ToDo's) in die Erinnerungen App integrieren möchtest, aktiviere das entsprechend.</p>
+<p><img src="./assets/cal-06.png" alt="Neuer Account" /></p>
+<p>Du kannst nun auf alle Kalender von der Nextcloud zugreifen. Es kann sein, dass du diese zunächst nicht siehst. Um dies zu ändern, Klicke in der Hauptansicht von Kalender auf »Kalender« und aktiviere die gewünschten Kalender.</p>
+<p><img src="./assets/cal-07.png" alt="Kalender anzeigen" /></p>
 
                     </main>
 

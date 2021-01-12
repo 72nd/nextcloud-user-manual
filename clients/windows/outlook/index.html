@@ -163,7 +163,52 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#outlook-einrichten" id="outlook-einrichten">Outlook einrichten</a></h1>
+                        <h1><a class="header" href="#outlook-kontakte-termine-und-aufgaben-synchronisieren" id="outlook-kontakte-termine-und-aufgaben-synchronisieren">Outlook (Kontakte, Termine und Aufgaben) synchronisieren</a></h1>
+<p>Dieser Abschnitt beschäftigt sich mit dem Einrichten von Nextcloud mit Outlook. Hierfür ist ein Plugin erforderlich, dessen Installation und Konfiguration nun erklärt wird.</p>
+<h2><a class="header" href="#plugin-installieren" id="plugin-installieren">Plugin installieren</a></h2>
+<p>Für die Integration wird das Plugin <a href="https://caldavsynchronizer.org/">Outlook CalDav Synchronizer</a> benötigt. Gehe zunächst auf <a href="https://caldavsynchronizer.org/download-2/">diese Seite</a> und klicke auf »Download« um das Herunterladen zu starten.</p>
+<p><img src="./assets/outlook-01.png" alt="Installationsdatei herunterladen" /></p>
+<p>Wenn der Download abgeschlossen ist, klicke auf die heruntergeladene Datei um sie zu öffnen.</p>
+<p><img src="./assets/outlook-02.png" alt="ZIP Datei öffnen" /></p>
+<p>Ein Dateifenster öffne sich. Starte die Installation mit einem Doppelklick auf die Datei »CalDavSynchronizer Setup«.</p>
+<p><img src="./assets/outlook-03.png" alt="Installer öffnen" /></p>
+<p>Klicke auf »Next«.</p>
+<p><img src="./assets/outlook-04.png" alt="Weiter" /></p>
+<p>Klicke auf »Next«.</p>
+<p><img src="./assets/outlook-05.png" alt="Weiter" /></p>
+<p>Erlaube das Durchführen der Installation mit einem Klick auf »Ja«.</p>
+<p><img src="./assets/outlook-06.png" alt="Installtion zulassen" /></p>
+<p>Warte, bis die Installation abgeschlossen ist und beende sie mit einem Klick auf »Close«.</p>
+<p><img src="./assets/outlook-07.png" alt="Installationsassistent schliessen" /></p>
+<h2><a class="header" href="#konfiguration" id="konfiguration">Konfiguration</a></h2>
+<p>Öffne nun Outlook. <em>Achtung:</em> Wenn Outlook während der Installation des CalDavSynchronizer offen war, musst du Outlook schliessen und nochmals öffnen.</p>
+<p>Outlook verfügt nun über eine neue Registerkarte (»CalDav Synchronizer«). Öffne diese, indem du auf diese  klickst.</p>
+<p><img src="./assets/outlook-08.png" alt="Plugin Registerkarte öffnen" /></p>
+<p>Klicke nun auf »Synchronization Profiles«.</p>
+<p><img src="./assets/outlook-09.png" alt="Profile öffnen" /></p>
+<p>Lege ein neues Profil mit einem Klick auf das grüne Plus an.</p>
+<p><img src="./assets/outlook-10.png" alt="Neues Profil anlegen" /></p>
+<p>Wähle die »Generic CalDAV/CardDAV« Option aus (1) und bestätige diese Wahl mit einem Klick auf »Ok«.</p>
+<p><img src="./assets/outlook-11.png" alt="Typ auswählen" /></p>
+<p>Das Profil kann nun weiter editiert werden. Gibt zunächst (1) dem Profil einen Namen. Dieser hat keine weitere Funktion, hilft aber bei der Unterscheidung mehrerer Profile. Es empfiehlt sich einfach den Namen des Kontaktbuches oder Kalenders zu verwenden, welcher synchronisiert werden soll.</p>
+<p>Aufgrund des Aufbaus von Outlook, muss jedes Kontaktbuch/Kalender/Aufgabenliste <em>separat</em> in einem eigenen Profil angelegt werden. Der Abschnitt »Konfiguration« muss also für alle Kontaktbücher/Kalender/Aufgabenlisten einzeln wiederholt werden. In Folge wird das Vorgehen anhand eines Kalenders gezeigt. Die Schritte für Kontaktbücher oder Aufgabenlisten sind aber die selben, auf Unterschiede wird hingewiesen werden.</p>
+<p>Klicke auf den »...« Button.</p>
+<p><img src="./assets/outlook-12.png" alt="Profilname und Ordner" /></p>
+<p>Klicke auf »Neu«.</p>
+<p><img src="./assets/outlook-13.png" alt="Ordnerübersicht" /></p>
+<p>Es muss nun ein neuer Ordner für den Kalender/Kontaktbuch/Aufgabenliste (ab jetzt »Ressource« genannt) angelegt werden. Vergebe hierzu zunächst (1) einen Namen. Dieser kann frei gewählt werden, am besten benennst du ihn so, wie die Ressource in der Nextcloud heisst. In einem zweiten Schritt (2) musst du den Elemententyp auswählen. Dieser entspricht der Ressource. In anderen Worten: Wenn du einen Kalender synchronisieren möchtest, brauchst du einen »Kalender« Typ etc.</p>
+<p>Abschliessend (3) musst du den Speicherort wählen. Aktiviere hierzu den passenden Ort. Wenn du eine Aufgabenliste synchronisieren möchtest wähle »Aufgaben« (A), für Kalender »Kalender« (B) und für Kontakte »Kontakte« (C). Schliesse deine Eingaben mit einem Klick auf »Ok« (4) ab.</p>
+<p><img src="./assets/outlook-14.png" alt="Neuer Ordner anlegen" /></p>
+<p>Wähle den soeben angelegten Kalender/Kontaktbuch/Aufgabenliste aus (1) und bestätige deine Wahl mit »Ok« (2).</p>
+<p><img src="./assets/outlook-15.png" alt="Neuer Ordner auswählen" /></p>
+<p>Aktiviere zunächst (1) die Option »Synchronize items immediately after change« und gib danach die Kalender-URL ein (2), wie du diese herausfindest erfährst du <a href="/clients/general/cal-url/index.html">hier</a>. Weiter gibst du dein Benutzername (3) sowie Passwort (4) ein. Abschliessend gib deine Mailadresse, welche auch von deinem Nextcloud-Account verwendet wird ein (5).</p>
+<p>Klicke nun auf »Test or discover settings«.</p>
+<p><img src="./assets/outlook-16.png" alt="Daten eingeben" /></p>
+<p>Es öffnet sich nun ein weiterer Dialog, indem du aus den vorhandenen Kalender/Kontaktbücher/Aufgabenlisten auswählen kannst. Klicke auf die gewünschte Ressource (1) und bestätige die Auswahl mit »Ok« (2).</p>
+<p><img src="./assets/outlook-17.png" alt="Ressource auswählen" /></p>
+<p>Die Konfiguration ist nun abgeschlossen. Mit einem Klick auf »Ok« werden deine Einstellungen gespeichert und du kannst die neue Ressource nutzen.</p>
+<p><img src="./assets/outlook-18.png" alt="Konfiguration abschliessen" /></p>
+<p><em>Hinweis:</em> Vergiss nicht, für jeden weiteren Kalender/Kontaktbuch/Aufgabenliste ein neues Profil und einen neuen Ordner anzulegen.</p>
 
                     </main>
 
