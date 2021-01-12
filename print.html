@@ -167,25 +167,134 @@
                     <main>
                         <h1><a class="header" href="#einleitung" id="einleitung">Einleitung</a></h1>
 <p>Diese Dokumentation beschreibt das Nutzen der Cloudsoftware <a href="https://nextcloud.com/de/">Nextcloud</a> und ist in zwei Teile unterteilt. Der erste Teil beschäftigt sich mit der Weboberfläche, welche unter <a href="https://nx15150.your-storageshare.de">https://nx15150.your-storageshare.de</a> mit einem Webbrowser aufrufen lässt. Der zweite Teil beschäftigt sich mit der Integration von Nextcloud in dein Desktop/Smartphone. Dieser Teil ist vor allem für Vielnutzer.innen interessant, welche mit ihren gewohnten Tools (Outlook etc.) arbeiten möchten. Für alle anderen reicht das Webinterface meist aus. </p>
-<h1><a class="header" href="#arbeiten-in-der-cloud" id="arbeiten-in-der-cloud">Arbeiten in der Cloud</a></h1>
 <h1><a class="header" href="#synchronisation-und-integration-mit-clients" id="synchronisation-und-integration-mit-clients">Synchronisation und Integration mit Clients</a></h1>
-<h1><a class="header" href="#android" id="android">Android</a></h1>
-<h1><a class="header" href="#dateien-synchronisieren" id="dateien-synchronisieren">Dateien synchronisieren</a></h1>
+<h1><a class="header" href="#nextcloud-mit-android-verbinden" id="nextcloud-mit-android-verbinden">Nextcloud mit Android verbinden</a></h1>
+<p>Dieses Kapitel befasst sich mit der Integration von Android Smartphones und Tablets mit Nextcloud. Folgende Themen werden abgedeckt:</p>
+<ul>
+<li><a href="clients/android/./files/index.html">Dateien</a> </li>
+<li><a href="clients/android/./cal/index.html">Kalender und Kontakte</a></li>
+<li><a href="clients/android/./tasks/index.html">Aufgabenlisten</a></li>
+<li><a href="clients/android/./deck/index.html">Deck</a></li>
+</ul>
+<p>Da gewisse Applikationen, welche verwendet werden, auf den kommerziellen Plattformen kostenpflichtig sind, wird für interessierte Personen auch die Installation des alternativen Stores <a href="clients/android/./fdroid/index.html">F-Droid</a> vorgestellt.</p>
+<h1><a class="header" href="#dateien" id="dateien">Dateien</a></h1>
+<p>Wer die Dateien auf sein Smartphone synchronisieren möchte, muss zunächst die Nextcloud App <a href="https://play.google.com/store/apps/details?id=com.nextcloud.client">aus dem Playstore</a> laden.</p>
+<p>Sobald die Applikation installiert ist, öffne diese und tippe auf »anmelden«.</p>
+<p><img src="clients/android/files/assets/files-01.png" alt="Startscreen Nextcloud App" /></p>
+<p>Nun muss die URL der Cloud (in unserem Falle <code>https://nx15150.your-storageshare.de</code>) eingegeben und die Eingabe mit einem Klick auf den Pfeil (2) bestätigt werden.</p>
+<p><img src="clients/android/files/assets/files-02.png" alt="Serveradresse eingeben" /></p>
+<p>Es wird nun die Anmeldeseite der Cloud geladen. Fahre mit einem tippen auf »Anmelden« fort.</p>
+<p><img src="clients/android/files/assets/files-03.png" alt="Anmeldeprozess starten" /></p>
+<p>Nun den persönlichen Nutzername und das zugehörige Passwort eingeben. Danach die Eingabe mit einem Tippen auf »Anmelden« bestätigen.</p>
+<p><img src="clients/android/files/assets/files-04.png" alt="Anmelden" /></p>
+<p>Das Einrichten ist nun abgeschlossen und die App kann verwendet werden.</p>
+<p><img src="clients/android/files/assets/files-05.png" alt="Funktioniert" /></p>
 <h1><a class="header" href="#kontakte-und-kalender-synchronisieren" id="kontakte-und-kalender-synchronisieren">Kontakte und Kalender synchronisieren</a></h1>
+<p>Um Kalender und Kontakte synchronisieren zu können, muss die Applikation DAVx5 vom <a href="https://play.google.com/store/apps/details?id=at.bitfire.davdroid">Google Playstore</a> heruntergeladen und installiert werden. Die Entwickler.innen haben sich entschieden, in kommerziellen Marktplätzen Geld für die App zu verlangen. Personen, welche sich das nicht leisten können/wollen, haben die Möglichkeit, DAVx5 kostenlos über den freien Store F-Droid <a href="https://f-droid.org/en/packages/at.bitfire.davdroid/">zu beziehen</a>. Weitere Informationen über die Benutzung von F-Droid finden sich <a href="clients/android/cal//clients/android/fdroid/index.html">im entsprechenden Abschnitt</a> dieser Dokumentation.</p>
+<p>Öffne die App und klicke dich durch die Begrüßung mit Klicks auf den Pfeil-Button.</p>
+<p><img src="clients/android/cal/assets/cal-01.png" alt="DAVx5 Begrüssung 1/2" /></p>
+<p>Bestätige den Hinweis mit einem Klick auf den Button.</p>
+<p><img src="clients/android/cal/assets/cal-02.png" alt="DAVx5 Begrüssung 2/2" /></p>
+<p>Klicke auf den Plus-Button, um mit dem Hinzufügen eines neuen Accounts zu beginnen.</p>
+<p><img src="clients/android/cal/assets/cal-03.png" alt="Neuen Account hinzufügen" /></p>
+<p>Wähle nun die Loginoption URL + Benutzername aus.</p>
+<p><img src="clients/android/cal/assets/cal-04.png" alt="Art des Logins wählen" /></p>
+<p>Nun können die relevanten Daten eingetragen werden. Trage zunächst (1) die URL der Cloud (in diesem Falle <code>https://nx15150.your-storageshare.de</code>), danach (2) deinen Benutzername und abschließend (3) dein Passwort ein. Danach kannst du mit einem Tippen auf »Anmelden« den Prozess starten.</p>
+<p><img src="clients/android/cal/assets/cal-05.png" alt="Daten eingeben" /></p>
+<p>War die Anmeldung erfolgreich, ist folgende Ansicht zu sehen. Es empfiehlt sich, die vorgeschlagenen Einstellungen zu übernehmen und mit einem Tippen auf »Konto anlegen« die Anmeldung abzuschließen.</p>
+<p><img src="clients/android/cal/assets/cal-06.png" alt="Accountname" /></p>
+<p>Im Anschluss daran öffnet sich die Hauptansicht der App. Um die Kalender und Kontaktbücher zu verwalten, klicke auf den neu angelegten Account.</p>
+<p><img src="clients/android/cal/assets/cal-07.png" alt="Accountübersicht" /></p>
+<p>Zunächst muss der Applikation Berechtigungen zugeteilt werden. Hierfür auf »Berechtigungen« tippen.</p>
+<p><img src="clients/android/cal/assets/cal-08.png" alt="Berechtigungen öffnen" /></p>
+<p>Nun alle Berechtigungen zulassen, indem auf die Schaltfläche neben »Alles Darunter« aktiviert wird. Es werden nun zwei Dialoge aufgehen, in welchen die Berechtigung für die Kontakte als auch die Kalender bestätigt werden müssen.</p>
+<p><img src="clients/android/cal/assets/cal-09.png" alt="Berechtigungen anpassen" /></p>
+<p>Wurde allen Dialogen zugestimmt, so sind alle drei Schalter nun aktiviert. Kehre mit einem Klicken auf den Zurückpfeil wieder zu den Kontaktbücher zurück.</p>
+<p><img src="clients/android/cal/assets/cal-10.png" alt="Berechtigungen erfolgreich angepasst" /></p>
+<p>In dieser Ansicht (»Carddav«) können die Kontaktbücher ausgewählt werden, welche mit dem Smartphone synchronisiert werden sollen. Danach auf den Reiter »Caldav« tippen (2), um die Kalender auszuwählen.</p>
+<p><img src="clients/android/cal/assets/cal-11.png" alt="Kontaktbücher" /></p>
+<p>In der Kalenderansicht die gewünschten Kalender auswählen. Danach sollte eine initiale Synchronisation mit dem Sync-Button (2) gestartet werden.</p>
+<p><img src="clients/android/cal/assets/cal-12.png" alt="Kalender" /></p>
+<p>Die Kalender und Kontaktbücher sind nun auf deinem Smartphone eingerichtet und können in den entsprechenden Apps (Kalender, Kontakte) verwendet werden. Die Synchronisation geschieht hierbei automatisch.</p>
 <h1><a class="header" href="#aufgaben" id="aufgaben">Aufgaben</a></h1>
+<p>Die Aufgabenlisten (ToDo-Listen, Tasks) von Nextcloud sind an die jeweiligen Kalender geknüpft. In anderen Worten: Sobald ein Kalender mit dem Smartphone synchronisiert ist (siehe Abschnitt <a href="clients/android/tasks//clients/android/cal/index.html">Kalender und Kontakte</a>), sind auch die entsprechenden Aufgabenlisten auf deinem System für ToDo-Apps verfügbar. Personen, welche noch nicht über solch eine App verfügen, sei <a href="https://play.google.com/store/apps/details?id=org.tasks">Tasks.org</a> empfohlen. Diese unterstützt auch Dinge wie Sub-Tasks usw. Die folgende Anleitung zeigt, wie die Berechtigungen korrekt gesetzt werden können.</p>
+<p>Die Einstellung muss in der DAVx5 App vorgenommen werden (also nicht in Tasks). Öffne also die App und klappe das Menü mit einem Klick auf die drei Striche oben links aus.</p>
+<p><img src="clients/android/tasks/assets/tasks-01.png" alt="Menü öffnen" /></p>
+<p>Öffne die Einstellungen mit einem Tippen darauf.</p>
+<p><img src="clients/android/tasks/assets/tasks-02.png" alt="Einstellungen öffnen" /></p>
+<p>Scrolle runter, bis du die Schaltfläche »App-Berechtigungen« siehst. Wenn dies der Fall ist, tippe darauf.</p>
+<p><img src="clients/android/tasks/assets/tasks-03.png" alt="Einstellungen öffnen" /></p>
+<p>Nun den Schieberegler neben »Tasks-Berechtigungen« aktivieren.</p>
+<p><img src="clients/android/tasks/assets/tasks-04.png" alt="Einstellungen öffnen" /></p>
 <h1><a class="header" href="#deck" id="deck">Deck</a></h1>
+<p>Für die Inhalte der Deck Applikation können existiert eine eigene App für die Android Plattform. Neben einer auf Smartphones angepassten Übersicht, werden dir auch Notifications über deine Tasks geschickt. Die Entwickler.innen haben sich entschieden, in kommerziellen Marktplätzen Geld für die App zu verlangen. Personen, welche sich das nicht leisten können/wollen, haben die Möglichkeit, die Deck App kostenlos über den freien Store F-Droid <a href="https://f-droid.org/en/packages/at.bitfire.davdroid/">zu beziehen</a>. Weitere Informationen über die Benutzung von F-Droid finden sich <a href="clients/android/deck//clients/android/fdroid/index.html">im entsprechenden Abschnitt</a> dieser Dokumentation.</p>
+<p>Die Konfiguration der Deck Applikation ist am einfachsten, wenn du bereits die normale Nextcloud App heruntergeladen und konfiguriert hast. Weitere Informationen hierzu findest du im <a href="clients/android/deck//clients/android/files/index.html">entsprechenden Abschnitt dieser Dokumentation</a>.</p>
+<p>Lade dir als erster Schritt die App aus dem <a href="https://play.google.com/store/apps/details?id=it.niedermann.nextcloud.deck.play&amp;hl=en&amp;gl=US">Play Store</a> oder <a href="https://f-droid.org/en/packages/it.niedermann.nextcloud.deck/">F-Droid</a> herunter und öffne sie.</p>
+<p>Tippe dann auf den Button »Choose Account«/»Account wählen«.</p>
+<p><img src="clients/android/deck/./assets/deck-01.png" alt="Startbildschirm" /></p>
+<p>Dir wird nun eine Liste aller Accounts präsentiert, welche in der Nextcloud App konfiguriert sind. Wähle den gewünschten Account aus (1) und bestätige deine Wahl mit »Ok« (2).</p>
+<p><img src="clients/android/deck/./assets/deck-02.png" alt="Account wählen" /></p>
+<p>Erlaube den Zugriff auf deinen Nextcloud Account mit einem Tippen auf »Allow«/»Zulassen«.</p>
+<p><img src="clients/android/deck/./assets/deck-03.png" alt="Zugriff auf Account zulassen" /></p>
+<p>Die Deck App ist nun konfiguriert und kann genutzt werden.</p>
+<p><img src="clients/android/deck/./assets/deck-04.png" alt="Die Deck App" /></p>
 <h1><a class="header" href="#f-droid" id="f-droid">F-Droid</a></h1>
+<p><strong>Warnung: Die Verwendung externer Paketquellen kann die Sicherheit deines Android Systems beeinträchtigen.</strong> F-Droid ermöglicht es, unabhängig von Google, Apps auf deinem Smartphone zu installieren. Zum einen erhöht dies die Freiheit der Nutzenden, zum anderen verlangt es von diesen auch ein erhöhtes Sicherheitsbewusstsein. <strong>Aus diesem Grund sei dieser Schritt nur Benutzer.innen empfohlen, welche sich in der Lage sehen, die Risiken zu verstehen und abwägen zu können.</strong></p>
+<p><strong><em>Die Urheber dieser Dokumentation übernehmen KEINE Verantwortung für Folgen, welche aus den Folgen dieser Anleitung noch dem Benutzen von F-Droid entstehen können.</em></strong></p>
+<p><a href="https://www.f-droid.org/">F-Droid</a> ist ein alternativer App-Store für Android und ermöglicht es, unabhängig von kommerziellen Stores sein Gerät mit Apps und Updates zu versorgen.</p>
+<p>Zunächst muss die Applikation aus dem Internet <a href="https://f-droid.org/F-Droid.apk">herunter geladen werden</a>. Hierfür kann der vorherige Link oder dieser QR-Code verwendet werden.</p>
+<p><img src="clients/android/fdroid/assets/fdroid-qr.png" alt="F-Droid APK QR-Code" /></p>
+<p>Sobald der Download der Applikation begonnen hat, bestätige, dass du die Datei auf deinem System behalten willst mit einem Tippen auf »Ok«.</p>
+<p><img src="clients/android/fdroid/./assets/fdroid-01.png" alt="Datei behalten" /></p>
+<p>Wen der Download abgeschlossen ist öffne die Datei mit einem Klick auf »Öffnen«.</p>
+<p><img src="clients/android/fdroid/./assets/fdroid-02.png" alt="Datei öffnen" /></p>
+<p>Wenn du nicht bereits andere Applikationen über deinen Browser installiert hast, wird dir der folgende Dialog präsentiert. Klicke auf »Einstellungen«.</p>
+<p><img src="clients/android/fdroid/./assets/fdroid-03.png" alt="Chrome Sicherheitsdialog" /></p>
+<p>Aktiviere nun die Schaltfläche »Dieser Quelle vertrauen«.</p>
+<p><img src="clients/android/fdroid/./assets/fdroid-04.png" alt="Chrome als Quelle vertrauen" /></p>
+<p>Kehre nun mit einem Klick auf den Pfeil oben links zurück.</p>
+<p><img src="clients/android/fdroid/./assets/fdroid-05.png" alt="Einstellungen schliessen" /></p>
+<p>Dir sollte nun der folgende Dialog präsentiert werden. Ist dies nicht der Fall, so suche die F-Droid Datei in deinen Downloads und öffne sie erneut.</p>
+<p>Klicke auf »Installieren«.</p>
+<p><img src="clients/android/fdroid/./assets/fdroid-06.png" alt="Installation starten" /></p>
+<p>Sobald die Installation abgeschlossen ist, wirst du darüber informiert. Tippe auf »Öffnen« um F-Droid zu starten.</p>
+<p><img src="clients/android/fdroid/./assets/fdroid-07.png" alt="Installation abgeschlossen" /></p>
+<p>Du kannst nun Applikationen aus dem unabhängigen F-Droid Store herunterladen.</p>
+<p><img src="clients/android/fdroid/./assets/fdroid-08.png" alt="Der F-Droid Store" /></p>
 <h1><a class="header" href="#mac" id="mac">Mac</a></h1>
-<h1><a class="header" href="#dateien-synchronisieren-1" id="dateien-synchronisieren-1">Dateien synchronisieren</a></h1>
+<h1><a class="header" href="#dateien-synchronisieren" id="dateien-synchronisieren">Dateien synchronisieren</a></h1>
 <h1><a class="header" href="#kalender-synchronisieren" id="kalender-synchronisieren">Kalender synchronisieren</a></h1>
 <h1><a class="header" href="#kontakte-synchronisieren" id="kontakte-synchronisieren">Kontakte synchronisieren</a></h1>
 <h1><a class="header" href="#windows" id="windows">Windows</a></h1>
-<h1><a class="header" href="#dateien-synchronisieren-2" id="dateien-synchronisieren-2">Dateien synchronisieren</a></h1>
+<h1><a class="header" href="#dateien-synchronisieren-1" id="dateien-synchronisieren-1">Dateien synchronisieren</a></h1>
 <h1><a class="header" href="#windows-10-kalender-synchronisieren" id="windows-10-kalender-synchronisieren">Windows 10 Kalender synchronisieren</a></h1>
 <h1><a class="header" href="#outlook-einrichten" id="outlook-einrichten">Outlook einrichten</a></h1>
 <h1><a class="header" href="#allgemein" id="allgemein">Allgemein</a></h1>
+<p>Dieses Kapitel umfasst weitere Themen der Integration von Nextcloud.</p>
 <h1><a class="header" href="#url-für-kalender--und-kontaktsynchronisation" id="url-für-kalender--und-kontaktsynchronisation">URL für Kalender- und Kontaktsynchronisation</a></h1>
-<h1><a class="header" href="#nextcloud-kalender-in-google-kalender-abonieren" id="nextcloud-kalender-in-google-kalender-abonieren">Nextcloud Kalender in Google Kalender abonieren</a></h1>
+<p>Gewisse Applikationen (z.B. die Kalenderapplikationen von Mac und Windows) benötigen eine spezielle URL, um auf die Daten zugreifen zu können. Da das Vorgehen für alle Systeme das selbe ist, wird dies hier für alle Systeme gemeinsam beschrieben. Diese Anleitung ist für dich nur von Interesse wenn du von einer anderen Dokumentation explizit hierauf verwiesen worden bist.</p>
+<p><strong>TL;DR.</strong> Die URL kann auch von deinem Benutzername (der Name mit welchem du dich auf Nextcloud einloggst) abgeleitet werden. Nimm <code>https://nx15150.your-storageshare.de/remote.php/dav/principals/users/BENUTZERNAME/</code> und ersetzte <code>BENUTZERNAME</code> mit deinem Nutzername (Beispiel, wenn dein Nutzername <code>max</code> ist, würde die URL <code>https://nx15150.your-storageshare.de/remote.php/dav/principals/users/max/</code> sein). Wenn dir das zu kompliziert ist, kannst du auch der weiteren Anleitung folgen.</p>
+<p>Öffne zunächst die Cloud in deinem Webbrowser. Danach wechsle zur Kalenderansicht.</p>
+<p><img src="clients/general/cal-url/./assets/calurl-01.png" alt="Kalenderansicht öffnen" /></p>
+<p>Klicke auf »Settings &amp; Import«/»Einstellungen &amp; Import«.</p>
+<p><img src="clients/general/cal-url/./assets/calurl-02.png" alt="Einstellungen öffnen" /></p>
+<p>Scrolle nun nach unten, bis du »Copy iOS/macOS CalDAV address« siehst und klicke darauf. Die URL wurde nun in die Zwischenablage kopiert und kann verwendet werden.</p>
+<p><img src="clients/general/cal-url/./assets/calurl-03.png" alt="Adresse kopieren" /></p>
+<h1><a class="header" href="#nextcloud-kalender-in-google-kalender-anzeigen-abonnieren" id="nextcloud-kalender-in-google-kalender-anzeigen-abonnieren">Nextcloud Kalender in Google Kalender anzeigen (abonnieren)</a></h1>
+<p>Es ist möglich, einzelne Nextcloud Kalender in Google Kalender zu abonnieren. Es ist dann also möglich, den Inhalt des Kalenders in Google zu sehen aber nicht zu bearbeiten.</p>
+<p>Öffne zunächst den Online Kalender der Nextcloud im Browser. Wähle den Kalender aus, welchen du in Google einbinden willst und klicke auf das Share Symbol (Kette) neben diesem.</p>
+<p><img src="clients/general/google-cal/./assets/google-01.png" alt="Kalenderübersicht" /></p>
+<p>Ein Menü klappt sich auf, klicke nun auf den Button mit den drei Punkten.</p>
+<p><img src="clients/general/google-cal/./assets/google-02.png" alt="Share Optionen" /></p>
+<p>Klicke nun auf »Copy subscription link«. Die URL für den Kalender befindet sich nun in deiner Zwichenablage. </p>
+<p><img src="clients/general/google-cal/./assets/google-03.png" alt="Subscription Link kopieren" /></p>
+<p>Öffne nun Google Kalender und klicke auf das Plus neben »Weitere Kalender«.</p>
+<p><img src="clients/general/google-cal/./assets/google-04.png" alt="Neuer Kalender hinzufügen" /></p>
+<p>In dem sich nun öffnenden Menü klicke auf »Per URL«.</p>
+<p><img src="clients/general/google-cal/./assets/google-05.png" alt="Kalender per URL hinzufügen" /></p>
+<p>Im Textfeld »URL des Kalenders« fügst du die URL aus der Zwischenablage ein (1). Danach kannst du die Eingabe mit einem Klick auf »Kalender hinzufügen« abschließen.</p>
+<p><img src="clients/general/google-cal/./assets/google-06.png" alt="Kalender konfigurieren" /></p>
+<p>Der Inhalt des Kalenders wird nun in Google Kalender angezeigt.</p>
 
                     </main>
 
