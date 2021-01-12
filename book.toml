@@ -4,3 +4,7 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Anleitung Nextcloud"
+
+[output.html]
+git-repository-url = "https://github.com/72nd/nextcloud-user-manual/"
+site-url = "72nd.github.io/nextcloud-user-manual"
