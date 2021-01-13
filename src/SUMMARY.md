@@ -23,5 +23,6 @@
 	- [Windows 10 Kalender synchronisieren](./clients/windows/cal/README.md)
 	- [Outlook einrichten](./clients/windows/outlook/README.md)
 - [Allgemein](./clients/general/README.md)
-	- [URL für Kalender- und Kontaktsynchronisation](./clients/general/cal-url/README.md)
 	- [Nextcloud Kalender in Google Kalender abonieren](./clients/general/google-cal/README.md)
+	- [Textdokumente offline bearbeiten](./clients/general/markdown/README.md)
+	- [URL für Kalender- und Kontaktsynchronisation](./clients/general/cal-url/README.md)

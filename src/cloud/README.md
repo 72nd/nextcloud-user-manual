@@ -35,6 +35,9 @@ Um ein Textdokument anzulegen, navigiere dich in den gewünschten Ordner und kli
 
 Solche Dokumente können auch von mehreren Personen gleichzeitig bearbeitet oder betrachtet werden.
 
+Die Dokument können mit zusätzlichen Programmen auch als PDF oder Word Datei exportiert werden. Weitere Informationen finden sich [in diesem Abschnitt](/clients/general/markdown/index.html).
+
+
 ## Sensible Daten (Passwörter etc.)
 
 Sobald multiple Accounts angelegt sind, die auch von mehreren Menschen verwaltet werden sollen, wird hier eine Passwortdatenbank für die entsprechenden Personen vorliegen. 
