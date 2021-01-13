@@ -61,7 +61,7 @@ Um Speicherort und Dateiformat zu ändern ist unten links ein Zahnrad für Einst
 
 Hier kann der Ordner des Speicherorts genannt werden. (Groß-/Kleinschreibung ist relevant!)
 
-![Speicherort Notizen ändern](./assets/notes-01.png)Zur schnellen Gestaltung kann auf die Markdown formatierung zurückgegriffen werden.
+![Speicherort Notizen ändern](./assets/notes-02.png)Zur schnellen Gestaltung kann auf die Markdown formatierung zurückgegriffen werden.
 
 Hier ein kurzes Reference-Sheet:
 
@@ -70,7 +70,8 @@ Hier ein kurzes Reference-Sheet:
 
 ## Deck (Projektmanagement)
 
-Decks ist unsere zentrale Aufgabenverteilung in Nextcloud. \
+Decks ist unsere zentrale Aufgabenverteilung in Nextcloud.
+
 Zu Beginn seht ihr eine Übersicht an allen Aufgaben, die euch zugewiesen wurden und eine grobe zeitliche Einordnung. Wird hier nichts gezeigt, wurde noch keine Aufgabe mit euch verlinkt.
 
 Alle Departments besitzen ein eigenes Deck und werden auf der linken Seite aufgelistet.
