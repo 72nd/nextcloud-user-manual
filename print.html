@@ -324,7 +324,8 @@
 <li><a href="clients/mac/./card/index.html">Kontakte</a></li>
 </ul>
 <h1><a class="header" href="#dateien-1" id="dateien-1">Dateien</a></h1>
-<p>Das Vorgehen bei der Konfiguration des Dateinsynchronsiation ist mit dem von Windows vergleichbar. Bis dieser Teil der Dokumentation fertiggestellt ist, verwende einfach die <a href="clients/mac/files//clients/windows/files/index.html">Anleitung für Windows</a>. Vergiss einfach nicht, die Mac und nicht die Windows Variante zu downloaden.</p>
+<p>Diese Anleitung hilft dir, die Dateien von Nextcloud mit deinem Mac zu synchronisieren.</p>
+<h2><a class="header" href="#installation-client" id="installation-client">Installation Client</a></h2>
 <h1><a class="header" href="#mac-kalender-einrichten" id="mac-kalender-einrichten">Mac Kalender einrichten</a></h1>
 <p>Die Kalender Applikation von macOS kann mit Nextcloud verbunden werden.</p>
 <p>Öffne hierzu zunächst die Kalenderapp auf deinem Mac. Danach klicke in der Menüleiste auf »Kalender« (1) und danach auf »Accounts...« (2).</p>
@@ -333,22 +334,17 @@
 <p><img src="clients/mac/cal/./assets/cal-02.png" alt="Neuen Account hinzufügen" /></p>
 <p>Wähle als Typ »CalDAV-Account« aus.</p>
 <p><img src="clients/mac/cal/./assets/cal-03.png" alt="CalDAV Typ auswählen" /></p>
-<p>Im nächsten Dialog müssen die korrekten Einstellungen gesetzt werden. Wähle zunächst (1) als Accounttyp <code>Erweitert</code> aus. Danach kannst du die Einstellungen (2) wie folgt setzten:</p>
+<p>Im nächsten Dialog müssen die korrekten Einstellungen gesetzt werden. Wähle zunächst (1) als Accounttyp <code>Manuell</code> aus. Danach kannst du die Einstellungen (2) wie folgt setzten:</p>
 <table><thead><tr><th>Einstellung</th><th>Was</th><th>Beispiel</th></tr></thead><tbody>
 <tr><td>Benutzername</td><td>Dein Loginname für Nextcloud.</td><td><code>max</code></td></tr>
 <tr><td>Passwort</td><td>Das Passwort, welches du für Nextcloud verwendest.</td><td></td></tr>
-<tr><td>Serveradresse</td><td>Die URL der Nextcloud ohne den <code>https://</code> Teil.</td><td><code>nx15150.your-storageshare.de</code></td></tr>
-<tr><td>Serverpfad</td><td><code>remote.php/dav/principals/users/BENUTZER/</code> wobei <code>BENUTZER</code> durch dein Loginname ersetzt werden muss.</td><td><code>remote.php/dav/principals/users/max/</code></td></tr>
-<tr><td>Port</td><td><code>433</code></td><td><code>433</code></td></tr>
-<tr><td>SSL Verwenden</td><td>Aktivieren (Hacken muss gesetzt sein).</td><td></td></tr>
-<tr><td>Kerbos v5 zur...</td><td>Deaktiviert (Hacken nicht gesetzt)</td><td></td></tr>
+<tr><td>Serveradresse</td><td>Die URL der Nextcloud.</td><td><code>https://nx15150.your-storageshare.de</code></td></tr>
 </tbody></table>
-<p>Die Beispielswerte gelten für den User mit dem Namen <code>max</code> auf der Nextcloud mit der URL <code>https://nx15150.your-storageshare.de</code>.</p>
 <p>Die Eingabe mit einem Klick auf »Anmelden« abschließen.</p>
 <p><img src="clients/mac/cal/./assets/cal-04.png" alt="Servereinstellungen" /></p>
 <p>Erlaube den Zugriff mit einem Klick auf »Immer erlauben«.</p>
 <p><img src="clients/mac/cal/./assets/cal-05.png" alt="Zugriff immer erlauben" /></p>
-<p>Die neue Kalenderverbindung befindet sich nun bei deinen Kalenderaccounts. Wenn du die Aufgabenlisten (ToDo's) in die Erinnerungen App integrieren möchtest, aktiviere das entsprechend.</p>
+<p>Die neue Kalenderverbindung befindet sich nun bei deinen Kalenderaccounts. In der Kontenübersicht aktiviere nun den neuen Eintrag (1). Je nach verwendeter URL kann der Kontonamen etwas lang werden, dies kannst du im Feld »Beschreibung« (2) ändern, der neue Name findet sich dann auch entsprechend in der Kalender Applikation.  Wenn du die Aufgabenlisten (ToDo's) in die Erinnerungen App integrieren möchtest, aktiviere das entsprechend (3).</p>
 <p><img src="clients/mac/cal/./assets/cal-06.png" alt="Neuer Account" /></p>
 <p>Du kannst nun auf alle Kalender von der Nextcloud zugreifen. Es kann sein, dass du diese zunächst nicht siehst. Um dies zu ändern, Klicke in der Hauptansicht von Kalender auf »Kalender« und aktiviere die gewünschten Kalender.</p>
 <p><img src="clients/mac/cal/./assets/cal-07.png" alt="Kalender anzeigen" /></p>
@@ -363,7 +359,7 @@
 </ul>
 <h1><a class="header" href="#dateien-2" id="dateien-2">Dateien</a></h1>
 <p>Diese Anleitung hilft dir, die Daten von Nextcloud mit deinem Windowssystem zu synchronisieren.</p>
-<h2><a class="header" href="#installation-client" id="installation-client">Installation Client</a></h2>
+<h2><a class="header" href="#installation-client-1" id="installation-client-1">Installation Client</a></h2>
 <p>Zunächst muss der Client heruntergeladen werden. Gehe hierfür auf <a href="https://nextcloud.com/install/#install-clients">https://nextcloud.com/install/#install-clients</a> und klicke auf »Windows« um den Installer herunterzuladen.</p>
 <p><img src="clients/windows/files/./assets/files-01.png" alt="Download starten" /></p>
 <p>Wenn der Download abgeschlossen ist, öffne die heruntergeladene Datei mit einem Klick auf die Datei.</p>
